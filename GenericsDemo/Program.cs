@@ -14,8 +14,10 @@ namespace GenericsDemo
             int[] intArray = { 20, 30, 40, 50 };
             double[] doubleArray = { 23.42, 12.46, 34.21, 67.7 };
             char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
+            int a = 20, b = 30, c = 50;
+
             Console.WriteLine("Please choose program from below option");
-            Console.WriteLine("1:PrintArray\n2:PrintArray using generic method\n3:Generic class concept");
+            Console.WriteLine("1:PrintArray\n2:PrintArray using generic method\n3:Generic class concept\n4:FindMaximum");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option) 
             {
@@ -36,6 +38,9 @@ namespace GenericsDemo
                     doubleObject.ToPrint();
                     GenericClassConcept<char> charObject = new GenericClassConcept<char>(charArray);
                     charObject.ToPrint();
+                    break;
+                case 4:
+                    FindMaximum.FindMaxvalue(a, b, c);
                     break;
             }
              Console.ReadLine(); 
