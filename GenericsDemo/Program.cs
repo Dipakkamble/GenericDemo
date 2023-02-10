@@ -14,8 +14,8 @@ namespace GenericsDemo
             int[] intArray = { 20, 30, 40, 50 };
             double[] doubleArray = { 23.42, 12.46, 34.21, 67.7 };
             char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
-            int a = 20, b = 30, c = 30;
-            
+            int a = 20, b = 30, c = 50;
+            float p = 33.4f,q = 45.8f,r = 98.3f;
 
             Console.WriteLine("Please choose program from below option");
             Console.WriteLine("1:PrintArray\n2:PrintArray using generic method\n3:Generic class concept\n4:FindMaximum");
@@ -42,6 +42,7 @@ namespace GenericsDemo
                     break;
                 case 4:
                     FindMaximum.FindMaxvalue(a, b, c);
+                    Console.WriteLine("{0} is greater among {1},{2},{3}",FindMaximum.FindMaxvalue(p, q, r),p,q,r);
                     break;
             }
              Console.ReadLine(); 

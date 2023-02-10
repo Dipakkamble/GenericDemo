@@ -24,6 +24,24 @@ namespace GenericsDemo
                 Console.WriteLine("{0} is greater", third);
             }
         }
-        
+        public static float FindMaxvalue(float first, float second, float third)
+        {
+            if (first.CompareTo(second) >= 0 && first.CompareTo(third) >= 0)
+            {
+                return first;
+                //Console.WriteLine("{0} is greater", first);
+            }
+            else if (second.CompareTo(first) >= 0 && second.CompareTo(third) >= 0)
+            {
+                return second;
+                //Console.WriteLine("{0} is greater", second);
+            }
+            else
+            {
+                return third;
+                //Console.WriteLine("{0} is greater", third);
+            }
+        }
+
     }
 }
