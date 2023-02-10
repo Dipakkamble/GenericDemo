@@ -14,7 +14,8 @@ namespace GenericsDemo
             int[] intArray = { 20, 30, 40, 50 };
             double[] doubleArray = { 23.42, 12.46, 34.21, 67.7 };
             char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
-            int a = 20, b = 30, c = 50;
+            int a = 20, b = 30, c = 30;
+            
 
             Console.WriteLine("Please choose program from below option");
             Console.WriteLine("1:PrintArray\n2:PrintArray using generic method\n3:Generic class concept\n4:FindMaximum");
