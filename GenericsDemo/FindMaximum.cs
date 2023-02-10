@@ -9,27 +9,27 @@ namespace GenericsDemo
 {
     internal class FindMaximum
     {
-        public static void FindMaxvalue(int first, int second, int third) 
+        public static int FindMaxvalue(int first, int second, int third) 
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
-                //return first;
-                Console.WriteLine("{0} is greater", first);
+                return first;
+                //Console.WriteLine("{0} is greater", first);
             }
             else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
             {
-                //return second;
-                Console.WriteLine("{0} is greater", second);
+                return second;
+                //Console.WriteLine("{0} is greater", second);
             }
             else if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
             {
-               //return third;
-                Console.WriteLine("{0} is greater", third);
+                return third;
+                //Console.WriteLine("{0} is greater", third);
             }
             else 
             {
-                //return default;
-                Console.WriteLine(" 2 & 3 numbers having same value");
+                return default;
+                //Console.WriteLine(" 2 & 3 numbers having same value");
             }
         }
         public static float FindMaxvalue(float first, float second, float third)

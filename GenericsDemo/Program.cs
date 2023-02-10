@@ -14,12 +14,12 @@ namespace GenericsDemo
             int[] intArray = { 20, 30, 40, 50 };
             double[] doubleArray = { 23.42, 12.46, 34.21, 67.7 };
             char[] charArray = { 'H', 'E', 'L', 'L', 'O' };
-            int a = 30, b = 30, c = 30;
+            int a = 30, b = 50, c = 40;
             float p = 45.8f,q = 45.8f,r = 45.8f;
             string str1 = "abc", str2 = "pqr", str3 = "xyz";
 
             Console.WriteLine("Please choose program from below option");
-            Console.WriteLine("1:PrintArray\n2:PrintArray using generic method\n3:Generic class concept\n4:FindMaximum");
+            Console.WriteLine("1:PrintArray\n2:PrintArray using generic method\n3:Generic class concept\n4:FindMaximum\n5:FindMaxRefactor");
             int option=Convert.ToInt32(Console.ReadLine());
             switch (option) 
             {
@@ -56,6 +56,11 @@ namespace GenericsDemo
                         Console.WriteLine("{0} is greater among {1},{2},{3}", res1, str1, str2, str3 );
                     else
                         Console.WriteLine(" 2 & 3 numbers having same values");
+                    break;
+                case 5:
+                    FindMaxRefactor<int> intobj = new FindMaxRefactor<int>(a,b,c);
+                    intobj.TestMaximum();
+                    Console.WriteLine();
                     break;
             }
              Console.ReadLine(); 

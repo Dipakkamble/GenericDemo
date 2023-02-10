@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FindMaximum.cs" />
+    <Compile Include="FindMaxRefactor.cs" />
     <Compile Include="GenericClassConcept.cs" />
     <Compile Include="GenericPrintArray.cs" />
     <Compile Include="PrintArray.cs" />
